@@ -31,7 +31,7 @@ const Companies = ({ companies }) => {
                 </div>
                 <div className="h-full flex flex-col">
                   <h2 className="text-2xl font-bold">{company.name}</h2>
-                  <p className="text-sm">{company.summery}</p>
+                  <p className="text-sm">{company.bio}</p>
 
                   {/* <p className="font-bold mt-auto pt-4">Advocates: {company.id}</p> */}
                 </div>
