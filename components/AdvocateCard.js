@@ -22,7 +22,7 @@ const shortenText = (text, limit) => {
 
 const AdvocateCard = ({ advocate }) => {
   return (
-    <Link href={`/advocates/${linkToId(advocate.url)}`}>
+    <Link href={advocate?.url && `/advocates/${linkToId(advocate?.url)}`}>
       <a className="p-5 rounded-lg overflow-hidden max-w-xl bg-neutral-800 flex gap-6 w-full mx-auto relative bottom-0 hover:bottom-1">
         <img
           src={advocate?.profile_pic}
@@ -35,7 +35,7 @@ const AdvocateCard = ({ advocate }) => {
             {advocate?.company?.name}
           </p>
           <p className="text-neutral-300  text-sm">
-            {shortenText(advocate?.bio, 120)}
+            {advocate?.bio && shortenText(advocate?.bio, 120)}
           </p>
           {advocate?.advocate_since && (
             <p className="text-neutral-300 mt-auto pt-4">
