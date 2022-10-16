@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-5 py-3 flex flex-col lg:flex-row items-center justify-between">
         <a className="group" href="//gavn.in" target="_blank" rel="noreferrer">
           <i className="fas fa-code"></i> by{" "}
-          <span className="font-bold underline decoration-transparent group-hover:decoration-white transition-all transition-300">
+          <span className="font-bold underline decoration-transparent group-hover:decoration-white ">
             Gavin Pereira
           </span>
         </a>
@@ -13,7 +13,7 @@ const Footer = () => {
           <a
             href="//nextjs.org"
             target="_blank"
-            className="font-bold underline decoration-transparent hover:decoration-white transition-all transition-300"
+            className="font-bold underline decoration-transparent hover:decoration-white "
             rel="noreferrer"
           >
             NextJS
@@ -22,7 +22,7 @@ const Footer = () => {
           <a
             href="//tailwindcss.com"
             target="_blank"
-            className="font-bold underline decoration-transparent hover:decoration-white transition-all transition-300"
+            className="font-bold underline decoration-transparent hover:decoration-white "
             rel="noreferrer"
           >
             TailwindCSS
